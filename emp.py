@@ -48,7 +48,8 @@ def get_data():
             json_data= response.json()
             result = json_data['result']
             data.extend(result)
-            
+        else:
+            print('some error while retreving data')
         page += 1
 
         
